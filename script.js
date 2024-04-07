@@ -120,3 +120,47 @@ function toggleProjects() {
   $("#underlined1").mouseleave(function() {
     $('#tip1').removeClass('d-block');
   });
+
+  $('#meNav').click(function() {
+    $('#me').addClass('show-section');
+    $('#meNav').addClass('selected-section');
+    $('#sketchbook').removeClass('show-section');
+    $('#sketchbookNav').removeClass('selected-section');
+    $('#gardening').removeClass('show-section');
+    $('#gardeningNav').removeClass('selected-section');
+    $('#travelDiary').removeClass('show-section');
+    $('#travelDiaryNav').removeClass('selected-section');
+  })
+
+  $('#sketchbookNav').click(function() {
+    $('#me').removeClass('show-section');
+    $('#meNav').removeClass('selected-section');
+    $('#sketchbook').addClass('show-section');
+    $('#sketchbookNav').addClass('selected-section');
+    $('#gardening').removeClass('show-section');
+    $('#gardeningNav').removeClass('selected-section');
+    $('#travelDiary').removeClass('show-section');
+    $('#travelDiaryNav').removeClass('selected-section');
+  })
+
+  $('#gardeningNav').click(function() {
+    $('#me').removeClass('show-section');
+    $('#meNav').removeClass('selected-section');
+    $('#sketchbook').removeClass('show-section');
+    $('#sketchbookNav').removeClass('selected-section');
+    $('#gardening').addClass('show-section');
+    $('#gardeningNav').addClass('selected-section');
+    $('#travelDiary').removeClass('show-section');
+    $('#travelDiaryNav').removeClass('selected-section');
+  })
+
+  $('#travelDiaryNav').click(function() {
+    $('#me').removeClass('show-section');
+    $('#meNav').removeClass('selected-section');
+    $('#sketchbook').removeClass('show-section');
+    $('#sketchbookNav').removeClass('selected-section');
+    $('#gardening').removeClass('show-section');
+    $('#gardeningNav').removeClass('selected-section');
+    $('#travelDiary').addClass('show-section');
+    $('#travelDiaryNav').addClass('selected-section');
+  })

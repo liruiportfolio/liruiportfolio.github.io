@@ -492,6 +492,141 @@ main{
 
 .about{
   margin-top:120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-wrap{
+  display:flex;
+  justify-content:center;
+}
+
+.about-title {
+  text-align:center;
+  display:flex;
+  justify-content: center;
+}
+
+.about-nav {
+  display: grid;
+  width:50%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 3rem;
+  gap: 4rem;
+  text-align: center;
+}
+
+.about-nav span {
+  opacity: 0.5;
+  text-align:center;
+  cursor: pointer;
+  user-select:none;
+}
+
+.about-nav span:hover {
+  opacity:1;
+  transition: 300ms ease-out;
+}
+
+.selected-section {
+  opacity: 1 !important;
+  font-weight: 700;
+}
+
+.about-me{
+  display:none;
+}
+
+.gallery-wrap{
+  display:none;
+  justify-content:center;
+  width:100%;
+  height:100%;
+}
+
+.about-gallery {
+  display:flex;
+  flex-wrap: wrap;
+  gap:8px;
+  width:100%;
+  justify-content:center;
+}
+
+.picture-frame{
+  object-fit: cover;
+  width:314px;
+  height:400px;
+  background-color:#ccc;
+}
+
+.picture-frame-landscape{
+  object-fit: cover;
+  width:314px;
+  height:246px;
+  background-color:#ccc;
+  align-self:center;
+}
+
+.picture-frame-fix{
+  height:185px;
+}
+
+.about-travel-diary{
+  display:none;
+  width:80%;
+}
+
+.article-container{
+  display:flex;
+  flex-direction: column;
+  gap:1rem;
+  width:100%;
+}
+
+.article{
+  display:grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items:center;
+  column-gap:24px;
+  padding-bottom:16px;
+  border-bottom:1px solid #eee;
+}
+
+.article:hover {
+  text-decoration: none;
+}
+
+.article img{
+  object-fit: cover;
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / span 3;
+  width:120px;
+  height:120px;
+  background-color:#ccc;
+}
+
+.article .date{
+  color: #999;
+  margin-bottom:0;
+}
+.article h3 {
+  font-weight:700;
+  font-size:16pt;
+  margin-bottom:0;
+}
+
+.article .description{
+  width:100%;
+  margin-bottom:0;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+
+.show-section{
+  display: flex;
 }
 
 .resume ul li{
@@ -906,5 +1041,5 @@ div.anchor{
 }
 
 p, h1, h3, h5, span {
-  color:#272727 !important;
+  color:#272727;
 }
