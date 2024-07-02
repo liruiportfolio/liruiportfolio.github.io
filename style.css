@@ -444,31 +444,36 @@ main{
 }
 
 #pr-main1{
-  order:-5;
+  order:-6;
   display:inline-grid;
 }
 
 #pr-main2{
-  order:-4;
+  order:-5;
   display:inline-grid;
 }
 
 #pr-main3{
-  order:-3;
+  order:-4;
   display:inline-grid;
 }
 
 #pr-main4{
-  order:-2;
+  order:-3;
   display:inline-grid;
 }
 
 #pr-main5{
-  order:-1;
+  order:-2;
   display:inline-grid;
 }
 
 #pr-main6{
+  order:-1;
+  display:inline-grid;
+}
+
+#pr-main7{
   order:0;
   display:inline-grid;
 }
